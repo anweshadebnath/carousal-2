@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carousal</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>Carousal</h1>
+        <nav class="nav__desktop">
+            <ul class="nav__links">
+                <li>Home</li>
+                <li>Link</li>
+                <li>Disabled</li>
+            </ul>
+            <div class="nav__desktop-input">
+                <input type="text" class="input" placeholder="Search" name="search">
+                <button class="nav__desktop-button">Search</button>
+            </div>
+        </nav>
+        <nav class="nav__mobile">
+            <div class="navigation__hamburger" onclick="toggleMenu()">
+                <div class="navigation__hamburger-bar"></div>
+                <div class="navigation__hamburger-bar"></div>
+                <div class="navigation__hamburger-bar"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <div class="carousal">
+                <div class="carousal__arrow" onclick="shiftLeft()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt=""></div>
+                <div class="carousal__content">
+                    <h2 class="carousal__heading">Another example headline.</h2>
+                    <p class="carousal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias minima hic quia voluptatem, quae perferendis consectetur ratione molestias tempore doloribus?</p>
+                    <button class="carousal__button">Learn more</button>
+                    <div class="rect">
+                        <div class="rect__symbol"></div>
+                        <div class="rect__symbol rect__symbol--bgcolor"></div>
+                        <div class="rect__symbol"></div>
+                    </div>
+                </div>
+                <div class="carousal__arrow" onclick="shiftRight()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt=""></div>
+            </div>
+        </main>
+        <div class="cards-container">
+            <ul class="card">
+                <li class="card__img"></li>
+                <li class="card__title">Heading</li>
+                <li class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi rerum vero eos, explicabo sequi dolor quia accusantium possimus tempora tempore.</li>
+                <li class="card__button">View details &gt;&gt;</li>
+            </ul>
+            <ul class="card">
+                <li class="card__img"></li>
+                <li class="card__title">Heading</li>
+                <li class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi rerum vero eos, explicabo sequi dolor quia accusantium possimus tempora tempore.</li>
+                <li class="card__button">View details &gt;&gt;</li>
+            </ul>
+            <ul class="card">
+                <li class="card__img"></li>
+                <li class="card__title">Heading</li>
+                <li class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi rerum vero eos, explicabo sequi dolor quia accusantium possimus tempora tempore.</li>
+                <li class="card__button">View details &gt;&gt;</li>
+            </ul>
+        </div>
+        <div class="big-cards-container">
+            <div class="big-card">
+                <div class="big-card__content">
+                    <h3 class="big-card__title">First featurette heading. It will blow your mind.</h3>
+                    <p class="big-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aperiam, obcaecati voluptas reprehenderit, consequuntur facilis quod quas enim vel iste quidem. Ut in laborum, asperiores eius consectetur nulla quae iure.</p>
+                </div>
+                <figure class="big-card__img">
+                    <img src="http://via.placeholder.com/500x500">
+                </figure>
+            </div>
+            <div class="big-card">
+                <div class="big-card__content">
+                    <h3 class="big-card__title">Oh yeah it's that good. See for yourself.</h3>
+                    <p class="big-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aperiam, obcaecati voluptas reprehenderit, consequuntur facilis quod quas enim vel iste quidem. Ut in laborum, asperiores eius consectetur nulla quae iure.</p>
+                </div>
+                <figure class="big-card__img">
+                    <img src="http://via.placeholder.com/500x500">
+                </figure>
+            </div>
+            <div class="big-card">
+                <div class="big-card__content">
+                    <h3 class="big-card__title">And lastly, this one. Checkmate.</h3>
+                    <p class="big-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aperiam, obcaecati voluptas reprehenderit, consequuntur facilis quod quas enim vel iste quidem. Ut in laborum, asperiores eius consectetur nulla quae iure.</p>
+                </div>
+                <figure class="big-card__img">
+                    <img src="http://via.placeholder.com/500x500">
+                </figure>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="license">&copy; 2017 Company, Inc.</p>
+            <ul class="footer__links">
+                <li>.Privacy</li>
+                <li>.Terms</li>
+            </ul>
+            <p class="footer__end"><a href="">Back to top</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
